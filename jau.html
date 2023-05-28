@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+     
+      
+    <style>
+        /* CSS code */
+        *
+        {
+            padding: 0;
+            margin: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+           
+        
+        }
+        body {
+            font-family: Arial, sans-serif;
+            
+            background-color: rgb(40, 44, 54);
+            color:white;
+            /* margin-left: 7px; */
+            
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .portfolio-item {
+            margin-bottom: 20px;
+            font-size: 34px;
+            text-align: center;
+        }
+
+        @media (max-width: 420px) {
+            /* CSS code for 480px and below */
+            .portfolio-item {
+                display: block;
+                width: 100%;
+                
+                
+            }
+            .aadvi_line
+            {
+                border-bottom: 2px solid rgb(255, 0, 0);
+                border-top: 2px solid rgb(255, 30, 0);
+                font-size: 40px;
+                background: black;
+                /* text-shadow: 2px 2px 3px gray; */
+            }
+            .jayu_img
+            {
+                height: 300px;
+                width: 300px;
+               border: 3px solid  white;
+               
+                border-radius: 50%;
+            }
+            .info_1
+            {
+                font-size: 30px;
+                color: rgb(61, 61, 38);
+                /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+                
+            }
+            #btn_1
+            {
+                height: 50px;
+                width: 200px;
+                /* background: none; */
+                border-radius: 20px;
+                font-size: 15px;
+                opacity: 0.6;
+                /* box-shadow: 0px 05px 4px gray; */
+                text-decoration: solid;
+                color: red;
+                font-size: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                /* box-shadow: 2px 3px 4px  greenyellow; */
+            }
+            #btn_1:hover
+            {
+
+                background-color: black;
+                color: wheat;
+            }
+
+            
+        }
+        .small_info{
+            font-size: 25px;
+            /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+           
+           padding: 10px;
+            background-color: darkred;
+            border-radius: 30px;
+           
+            /* margin: 5px; */
+        }
+        .hr_1
+        {
+
+            background-color: red;
+            height: 3px;
+           
+            
+        }
+        .imp_links
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+    .hr img {
+
+        position: relative;
+
+    }
+     
+    .multi
+    {
+        color: cadetblue;
+    }
+     
+    .container_2
+    {
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .skills
+    {
+        height: 100vh;
+       
+    }
+    .bx
+    {
+        font-size: 24px;
+        color:red;
+    }
+    .main_2
+    {
+        /* background:linear-gradient(to right, #42d469,#2f9a12); */
+        background-color: rgb(62, 55, 62);
+        border-radius: 30px;
+        padding: 20px;
+    }
+    .desi_1
+    {
+        width: 50px;
+        height: 70px;
+        /* background:linear-gradient(to left, red,blue); */
+        position: absolute;
+        background-color: red;
+        top: 180px;
+        left: 0px;
+        transform: rotate(70deg);
+        /* opacity: 0.8; */
+       box-shadow: 2px 2px 10px floralwhite;
+       margin-left: 7px;
+       
+    }
+    .desi_2
+    {
+        width:50px;
+        height: 70px;
+        /* background-color: yellowgreen; */
+        background:linear-gradient(to left, rgb(96, 218, 167),rgb(126, 78, 54));
+        transform: rotate(45deg);
+        position: absolute;
+        top: 220px;
+        left: -1px;
+        opacity: 0.4;
+        transform: rotate(70deg);
+        box-shadow: 2px 0px 10px floralwhite;
+        margin-left: 7px;
+    }
+    
+.links
+{
+   display: flex;
+   flex-direction: row;
+   gap: 40px;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   border-bottom: 3px solid yellow;
+   border-top: 3px solid yellow;
+
+}
+.container_3
+{
+    height: auto;
+    background: darkred;
+    border-radius: 50px;
+    padding-bottom: 20px;
+}
+.main_3
+{
+    height:auto;
+    background-color: rgb(53, 58, 58);
+    opacity: 0.8;
+    border-radius: 40px;
+    /* border: 3px solid darkred; */
+    padding: 15px;
+    margin: 15px;
+    
+}
+.sec_1
+{
+    height: 10vh;
+    font-size: 30px;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-overflow: initial;
+    
+}
+.imgs
+{
+    display: flex;
+    
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    transition: 1s;
+    background-color: darkslategrey;
+    margin-bottom: 10px;
+    
+}
+.d_1{
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    background-color: darkred;
+    border-radius: 30px;
+    margin: 5px;
+    transition: 1s;
+   
+}
+.d_1 p
+{
+    transition: 1s;
+}
+#pp
+{
+    position: sticky;
+    top: 0;
+    /* height:5vh; */
+    font-size:30px;
+    text-align: center;
+    /* background-color: rgb(62, 61, 60); */
+    background-color: rgb(53, 58, 58);
+    /* border-radius: 20px; */
+    /* border: 3px solid cadetblue; */
+        /* border-top: 3px solid cadetblue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+}
+.p_1
+    {
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        /* border: 3px solid cadetblue; */
+        border-top: 3px solid cadetblue;
+        border-bottom: 3px solid cadetblue;
+        padding: 10px;
+       /* padding: 5px ; */
+       background: rgb(62, 55, 62);
+       /* opacity:0.5; */
+       /* border-radius: 20px; */
+       position: sticky;
+       top: 0;
+    }
+    .main_4
+    {
+        height:auto;
+        background-color: rgb(48, 46, 46);
+        border-radius: 50px;
+        padding-bottom: 10px;
+    }
+    .main_5
+    {
+        height:auto;
+        background-color: rgba(105, 98, 198, 0.503);
+        margin-top: 10px;
+        border-radius: 20px;
+       padding-bottom: 30px;
+
+    }
+    .p_3
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* margin-top: 10px; */
+        height: 7vh;
+        position: sticky;
+        top: 0;
+        border: 3px solid red;
+        border-radius: 20px;
+        color: black;
+        opacity: 0.7;
+        flood-opacity: initial;
+
+    }
+    .imgs_3
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+    .imgs_4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .color
+    {
+        background:linear-gradient(to top, rgba(44, 95, 44, 0.63),rgba(65, 187, 231, 0.69));
+        opacity: 0.8;
+        border-radius: 30px;
+    }
+    .main_6
+    {
+        height: auto;
+        margin-top: 100px;
+        margin-bottom: 60px;
+
+    }
+    .main_6 a 
+    {
+        text-decoration: none;
+    }
+.viewme
+{
+    height: 50px;
+                width: 200px;
+                /* background: none; */
+                border-radius: 20px;
+                font-size: 15px;
+                opacity: 0.6;
+                /* box-shadow: 0px 05px 4px gray; */
+                text-decoration: solid;
+                color: red;
+                font-size: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#big
+{
+    font-size: 60px;
+    color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-style: normal;
+}
+
+/* nav{
+
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(255, 0, 0);
+    position: sticky;
+    bottom: 0;
+   
+    
+
+} */
+ nav ul 
+ {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    gap: 20px;
+    position: sticky;
+    top: 0;
+ }
+ nav ul li 
+ {
+    list-style:none;
+    
+    
+ }
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+   
+}
+.navfoot
+{
+    margin-bottom: 20px;
+    background-color: #010101;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position:sticky;
+    bottom: 5px;
+    border-left: 3px solid violet;
+    border-right: 3px solid violet;
+    border-top: 3px solid violet;
+    border-radius: 20px;
+    color: black;
+    /* padding: 10px; */
+    margin: 10px;
+    -webkit-box-shadow: 0 0 10px #ff0000;
+        box-shadow: 0 0 10px #ff0000;
+        opacity: 0.8;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        text-decoration: underline;
+        border: 2px solid red;
+        
+
+}
+.adj_1
+{
+    margin: 15px;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<!--    
+    <div class="jayy"><li><a href="#myhome">HOME</a></li></div> 
+    <div class="jayy"><li><a href="#myskills">SKILLS</a></li></div>
+    <div class="jayy"><li><a href="#hireme">HIRE ME</a></li></div>
+   <div class="jayy"><li><a href="#myprojects">PROJECTS</a></li></div> -->
+    
+   
+
+    <!-- HOME// SKILLS//PROJECT//HIRE ME -->
+  
+    <section id="myhome">
+    <div class="container">
+        <div class="color">
+        <div class="portfolio-item">
+            
+            <!-- Portfolio item content -->
+           <h1 class="aadvi_line">PORTFOLIO.</h1>
+        </div>
+        <div class="portfolio-item">
+            <!-- Portfolio item content -->
+            <h3 class="info_1">HEY THERE ,<br> I AM <br>JAYESH SHINDE..</h3>
+        
+
+            <br>
+            <br>
+            <div class="design">
+                <img src="design.jpg.png" alt="" width="200px" height="80px" style="border-radius: 20px;">
+                <br>
+                <!-- <img src="pro.png" alt="" width="400px" height="120px" style="border-radius: 20px;"> -->
+            </div>
+            <br>
+            <h3 style="font-size: 30px; font-variant: initial; color: cadetblue; text-decoration: forestgreen rgb(232, 211, 105); text-underline-offset:yellow; text-shadow: 3px 3px 3px rgb(255, 0, 0);"> A<br> <span class="multi"></span></h3>
+            <br>
+            <!-- <div class="typing-effect">
+                <h6 class="text">A SOFTWARE DEVELOPER AND APPLICATION DEVELOPER</h6>
+            </div> -->
+       
+            <div class="portfolio-item">
+                <!-- Portfolio item content -->
+
+             
+              <div class="adj_1">
+                <p class="small_info">
+                    <br>
+                    <br>
+                    Welcome to my Website! 
+                    a  front end developer with a passion for creating functional and visually appealing digital experiences. Whether you're here to explore my portfolio, learn more about me, or find resources for your own projects, I'm excited to have you.
+                    <br>
+                    <br>
+                
+                </p>
+              </div>
+            
+                <br>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+              <center>
+                <button id="btn_1">
+                    DOWNLOAD CV
+                </button>
+              </center>
+              <br>
+             
+            <br>
+            </div>
+        </section>
+
+            
+        </div>
+        <div class="portfolio-item">
+            <!-- Portfolio item content -->
+            <div class="hr">
+            <img src="IMG_20220121_215043_868.jpg" alt="img" width="200px" height="100px"class="jayu_img" style="background-color: aqua;">
+            <!-- <p>IT's ME</p> -->
+            <br>
+            <br>
+            </div>
+            <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: azure;" class="imp_links">CONNECTING LINKS : </h2>
+            <br>
+
+            <div class="links">
+                <!-- <box-icon type='logo' name='instagram'></box-icon> -->
+                <a href="https://instagram.com/mr_jayu_7588?igshid=MzRlODBiNWFlZA==">
+                    <i class="fa-brands fa-instagram fa-beat fa-lg"  style="color: #d03e3e;"></i>
+                </a>
+                <a href="">
+                    <i class="fa-brands fa-linkedin-in fa-beat fa-lg" style="color: #ec4b22;"></i>
+                </a>
+               
+                <a href="http://Wa.me/+9028570002&text=Hi i'm intrested to hire you as a intern">
+                    <i class="fa-brands fa-whatsapp fa-beat fa-lg" style="color: #df4534;"></i>
+                </a>
+                
+                <a href="">
+                    <i class="fa-brands fa-github fa-beat fa-lg" style="color: #e42f2f;"></i>
+                </a>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="desi_1">
+
+        </div>
+        <div class="desi_2">
+
+        </div>
+
+        
+        <br>
+        <br>
+       
+       <div class="main_2">
+        <p class="p_1"style="text-align: center;">SOME OF MY QUALITIES INCLUDE</p>
+        <br>
+        <div class="container_3">
+            <center>
+           
+           <img src="bgg.jpg" alt=""  width="350px" height="250px" style="padding-right: 10px;">
+           <br>
+           <p><li style="text-align: center; font-size: 19px;">TEAM WORK</li></p>
+           <br>
+        </center>
+          
+           
+           <center>
+            <img src="jayu.jpg" alt=""  width="300px" height="250px">
+            <br>
+            <br>
+            <p><li style="text-align: center; font-size: 19px;">LEADERSHIP QUALITY</li></p>
+            <br>
+            
+         </center>
+          
+         <center>
+            <img src="pu_3.jpg" alt=""  width="350px" height="300px">
+            <br>
+            <br>
+            <p><li style="text-align: center; font-size: 19px;">PUBLIC SPEAKING</li></p>
+            <br>
+            
+         </center>
+
+         <center>
+            <img src="ms_1.jpg" alt=""  width="350px" height="300px">
+            
+            
+            <p><li style="text-align: center; font-size: 19px;">MARKITING STRATEGY</li></p>
+            
+            
+         </center>
+        
+           
+
+       </div>
+       <br>
+       <br>
+
+       <div class="container_2">
+
+       </div>
+
+       
+    </div>
+
+    <div class="sec_1">
+       
+    </div>
+
+    <section id="myskills">
+    <div class="main_3">
+        <p id="pp">
+            SKILLS : 
+        </p>
+
+        <div class="imgs"style="border: 3px solid rgb(219, 238, 49); border-radius:20px;">
+            <img src="cppp.jpg" alt=""  width="150px" height="150px" >
+         
+            <details class="d_1">
+                <summary>c # programming</summary>
+                <br>
+                <hr>
+                <br>
+                <p>In the C # I learned the basic c#, oops in c#, collaction in c#</p>
+                <br>
+              </details>
+              <img src="cop_4.jpg" alt=""  width="150px" height="150px">
+              <details class="d_1">
+                <summary>C++ programming</summary>
+                <br>
+                <hr>
+                <br>
+                <p>In the c++ i learned the basic c++, oops in c++, some data-structures.</p>
+                <br>
+              </details>
+              <img src="html.jpg" alt=""  width="150px" height="150px">
+              <details class="d_1">
+                <summary>HTML programming</summary>
+                <br>
+                <hr>
+                <br>
+
+                <p>HTML is the called the language of web every website on planet on eart uses expect the few websits uses blazor a framework of C # programming language </p>
+                <br>
+              </details>
+              <img src="css.jpg" alt=""  width="150px" height="200px">
+              <details class="d_1">
+                <summary>cascadding style sheets</summary>
+                <br>
+                <hr>
+                <br>
+                <p>it is used to butify the HTML document</p>
+                <br>
+              </details>
+              <img src="js.jpg" alt=""  width="150px" height="150px">
+              <details class="d_1">
+                <summary>JAVASCRIPT</summary>
+                <br>
+                <hr>
+                <p>About 97% of world's websits uses javascript to make their websites dynamic javascript is a language which can be used for front-end as well as for backend..</p>
+              </details>
+              <img src="py.jpg" alt=""  width="150px" height="150px">
+              <details class="d_1">
+                <summary>PYTHON</summary>
+                <br>
+                
+                <hr>
+                <br>
+                
+                <p>Python is heigh level object oriented programming language used for the AI nad ML</p>
+                <br>
+                
+              </details>
+              <img src="ui.gif" alt=""  width="200px" height="150px" style="background-color: azure; border-radius: 20px;">
+              <details class="d_1">
+                <summary>UI DESIGNING</summary>
+                <br>
+                <hr>
+                <br>
+                <p>Mainely used for DESIGNING the apps and webs </p>
+                <br>
+              </details>
+
+              <img src="sql.jpg" alt=""  width="200px" height="150px" style="background-color: azure; border-radius: 20px;">
+
+              <h2>MYSQL</h2>
+             
+              <img src="mongodb.jpg" alt=""  width="200px" height="150px" style="background-color: azure; border-radius: 20px;">
+
+              <h2>MONGO DB</h2>
+             
+
+        </div>
+        
+    
+    </div>
+</section>
+    <br>
+    <br>
+
+<section id="myprojects">
+    <div class="main_4">
+      
+
+        <div class="p_3" style=" background-color: white">
+            <p style="font-size: 30px;">
+                MY PROJECTS:
+             </p>
+           
+             
+        </div>
+        <br>
+        <br>
+        <h3 style="padding: 5px; background-color: rgb(104, 100, 91); color: #663f35; border-radius: 10px; margin: 10px; font-size: 20px; font-style: italic; align-items: center; display: flex;"> DUE TO UNIVERSITY EXAMS <br>PROJECTS ARE UNDER DEVELOPENENT<br> IT IS JUST A PREVIEW <br></h3>
+        <br>
+        <br>
+        <div class="imgs_3">
+            
+            <img src="Screenshot (59).png" alt=""  width="270px" height="170px" style="border-radius: 40px;" id="parlor">
+        
+            </div>
+            <br>
+            <p style="font-size: 20px; margin-left: 25%;">MADE WEBSITS FOR COMMERSIAL USE</p>
+            <br>
+            <br>
+            <br>
+
+            <div class="imgs_4">
+        
+                <img src="cha.jpg" alt=""  width="250px" height="200px" style="border-radius: 10px;">
+            </div>
+                <br>
+                
+                <!-- LINK RAH GAYI HAI -->
+                <p style="font-size: 20px; margin-left: 10%;">CHAT APP DESIGN USING FIGMA</p>
+                <br>
+                <br>
+
+            <hr style="height: 4px; background-color: #ec4b22; border-radius: 20px;">
+            <br>
+            <br>
+
+                    <center>
+                    <h2 style="color:rgb(39, 124, 199);">OUT OF THE BOX PROJECT </h2>
+                    <br>
+                    <br>
+                    <h3>MADE A SMART WATER CHEMBER (AUTOMATIC)</h3>
+                    <br>
+                    <br>
+                    <video src="VID-20230521-WA0001.gif.mp4" width="300px" height="200px" autoplay loop muted style="border-radius: 20px; border-left: 3px solid white;  border-right: 3px solid white;">
+                        SMART WATER CHEMBER
+                    </video>
+                    <a href="edipro.html">
+                        <button class="viewme">
+
+                            VIEW PROJECT 
+                        </button>
+                    </a>
+                 
+
+                    
+                    </center>
+
+
+            
+              
+         
+
+    </div>
+</section>
+
+
+        
+     <div class="space" style="height: 10vh;">
+
+     </div>
+
+
+    <div class="main_5" style=" margin: 10px;">
+        <br>
+        <br>
+        
+        <center>
+
+        <h2 style="margin-top: 10px;"> FUTURE GOALS ABOUT LEARNING</h2>
+        <br>
+        <br> 
+    </center>
+    <div class="item" style="font-size: 25px; padding-left: 10px;">
+        <li>ASP.net</li>
+        <li>APP DEVELOPENENT</li>
+        <li>BLOCKCHAIN</li>
+        <li>AI & ML</li>
+       </div>
+
+    </div>
+
+    <section id="hireme">
+    <div class="main_6">
+
+       <h3 style="text-align: center; font-size: 25px; color: brown; padding: 5px; border-top: 3px dotted yellow; border-bottom: 3px dotted yellow;"> FILL THE FORM <br> AND CLICK ON WHATSAPP BUTTON TO HIRE ME AS AN INTERN.... </h3>
+       
+     <br>
+     <br>
+     <div class="form_1">
+
+       
+            
+        <center>
+         <form action="">
+     
+             <input type="text" placeholder="  name" style="width: 300px; height: 30px; border-radius: 5px;"><br><br>
+             <input type="number" placeholder="  phone number"style="width: 300px; height: 30px; border-radius: 5px;">
+             <br>
+             <br>
+             <button  style="width:100px; height: 30px; border-radius: 10px; background-color: greenyellow;" id="submit"> submit</button>
+             <button type="clear" style="width:100px; height: 30px; border-radius: 10px; background-color: greenyellow;"> clear </button>
+
+         </form>
+        </center>
+     
+     </div>
+     <br>
+     <br>
+        <a href="http://Wa.me/+9028570002&text=Hi i'm intrested to hire you as a intern" target="blanket">
+            <i class="fa-brands fa-whatsapp" id="big"></i>
+            </a>
+
+            
+  <!-- <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="350px" height="800" >Loading...</iframe> -->
+
+
+
+    </div>
+</section>
+  
+<div class="navfoot">
+    <footer>
+        <nav>
+            <ul>
+           <div class="jayy"><li><a href="#myhome">HOME</a></li></div> 
+            <div class="jayy"><li><a href="#myskills">SKILLS</a></li></div>
+            <div class="jayy"><li><a href="#myprojects">PROJECTS</a></li></div>
+            <div class="jayy"><li><a href="#hireme">HIRE ME</a></li></div>
+          
+            </ul>
+            
+        </nav>
+    </footer>
+</div>
+
+
+</body>
+<script>
+
+    let typed = new Typed(".multi",{
+        strings : ["UI / UX DESIGNER","FRONTEND WEB DEVELOPER","FREELANCER"],
+        typeSpeed:40,
+        backSpeed: 30,
+        loop:true
+    });
+
+    let jj = document.getElementById("btn_1");
+jj.addEventListener("click", () => {
+  alert(" SORRY BUT CV IS UNDER PROCESSING.Due to university exams");
+});
+
+// const imgElement = document.getElementsByTagName("cpppp"); // Select the image element
+
+// imgElement.addEventListener('contextmenu', (event) => {
+//   event.preventDefault(); // Prevent the default context menu from appearing
+// });
+
+
+// window stick code javascript
+window.addEventListener('scroll', function() {
+  var div1 = document.getElementsByClassName('p_1');
+  var div3 = document.getElementsById('pp');
+  var div4 = document.getElementsByClassName('main_3');
+  var div1Offset = div1.offsetTop + div1.offsetHeight;
+  var div3Offset = div4.offsetTop +div4.offsetHeight;
+
+  if (window.pageYOffset > div1Offset && window.pageYOffset < div3Offset) {
+    div1.classList.remove('sticky');
+  } else {
+    div1.classList.add('sticky');
+  }
+});
+
+
+let hj = document.getElementById("submit");
+
+hj.addEventListener("click",()=>{
+    alert("THANKS YOUR RESPONCE HAS NOTED SUCCESSFULLY");
+})
+
+let hjj = document.getElementById("parlor");
+hjj.addEventListener("click",()=>{
+    alert("its under developement");
+})
+
+</script>
+</html>
